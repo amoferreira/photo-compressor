@@ -86,6 +86,7 @@ class MainActivity : ComponentActivity() {
             intent.getParcelableExtra(Intent.EXTRA_STREAM)
         } ?: return
         viewModel.updateUncompressUri(uri)
+        viewModel.updateCompressBitmap(null)
 
         val workRequest = OneTimeWorkRequestBuilder<PhotoCompressionWorker>()
             .setInputData(
