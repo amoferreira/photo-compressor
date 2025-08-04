@@ -59,4 +59,5 @@ dependencies {
 
     implementation(libs.workmanager)
     implementation(libs.coil)
+    implementation(libs.compose.livedata)
 }
